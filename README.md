@@ -1,20 +1,15 @@
-# 码志
+# 呆萌古的代码笔记
 
-我的个人博客：<http://mazhuang.org>，欢迎 Star 和 Fork。
+我的个人博客：<demonkoo.github.io>，fork自<https://github.com/mzlogin/mzlogin.github.io>，非常感谢。
+
+**暂时处于研究学习阶段，未能进行修改，纯fork，以下均为保留信息：**
 
 ## 概览
 
-* [效果预览](#效果预览)
 * [Fork 指南](#fork-指南)
 * [贴心提示](#贴心提示)
 * [经验与思考](#经验与思考)
 * [致谢](#致谢)
-
-## 效果预览
-
-### [在线预览 &rarr;](http://mazhuang.org)
-
-![screenshot home](http://mazhuang.org/assets/images/screenshots/home.png)
 
 ## Fork 指南
 

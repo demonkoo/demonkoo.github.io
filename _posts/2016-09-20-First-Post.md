@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 博客迁移计划启动
-categories: [Diary]
+categories: Diary
 description: 博客迁移
 keywords: 博客, 迁移
 ---

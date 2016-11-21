@@ -67,3 +67,20 @@ $ ssh -T git@yuanshanlee.github.io
 以上就是如何建立两个不同的 SSH 并绑定到对应的 GitHub 账号以方便代码管理。
 
 其实我觉得直接用自己的账号成为 Contributor 也不是不行……算了开心就好，我也学到了一点新知识（虽然我觉得以后也用不到╮(╯_╰)╭），今天就这样吧~
+
+---
+
+2016.11.21 Update
+
+在设置 `~/.ssh/config` 文件的时候，最好保留一下 `Host github.com` 的设置：
+
+```
+Host github.com
+  HostName github.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/我的SSH Key
+```
+
+不然之后每次新建 github repository 的时候都得手动修改一下 url ，因为默认提供的形式会是 `git@github.com:demonkoo/XXX.git` 这种形式，如未保留，则需修改为 `git@demonkoo.github.io:demonkoo/XXX.git` 。
+
+还是建议保留，不然看起来十分别扭╮(╯_╰)╭如果这里你用新的 SSH Key 记得去自己的 GitHub Setting 中添加。

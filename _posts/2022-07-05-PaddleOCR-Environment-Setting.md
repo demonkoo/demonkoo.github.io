@@ -56,7 +56,7 @@ PaddlePaddle 是基础框架，一定要装的，不要和 PaddleOCR 安装搞�
 
 如果你使用的是 Pypi 源，这一步本来是没有坑的，但如果使用的是国内源，在验证环节：
 ```
-import Paddle
+import paddle
 ```
 后就会发现报 protobuf 版本过高的错误。[错误原因](https://github.com/PaddlePaddle/Paddle/issues/43052)其实就是安装 Paddle 过程中会升级 protobuf 至4.21，降级回 3.20.1 就行：
 
@@ -71,6 +71,12 @@ pip install protobuf==3.20.1 -i https://pypi.tuna.tsinghua.edu.cn/simple
 如果之前没有按照官方文档使用 Anaconda 在创建 conda 环境一步步来弄的话，这一步直接在 Terminal 用 Pip 会有 Error 装不上。就算按照官方提示安装 shapely 安装包也不行，我试着用 conda 来安装 shapely 再装 PaddleOCR 也不行。最后东拼西凑强行解决了安装中的报错问题后，再次导入 PaddlePaddle 框架居然发现 Numpy 也莫名发生了问题……
 
 所以之前没有老实按照官方指南来做，这一步又发生乱七八糟问题不会 debug 的朋友，还是从头一步步弄吧，血泪教训。
+
+另，Windows 下可以用 conda 安装 shapely 包先，然后再安装 PaddleOCR ，这样就不会报错：
+
+```
+conda install shapely
+```
 
 ### 2.4.测试 PaddleOCR
 
